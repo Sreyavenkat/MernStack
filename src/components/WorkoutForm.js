@@ -12,6 +12,8 @@ const handleSubmit = async (e) => {
 
     const workout = {title , load , reps}
 
+    
+
     const response = await fetch('/api/workouts' , {
         method: 'POST',
         body: JSON.stringify(workout) , 
